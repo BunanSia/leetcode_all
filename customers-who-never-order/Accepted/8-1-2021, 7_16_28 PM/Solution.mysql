@@ -1,0 +1,6 @@
+// https://leetcode.com/problems/customers-who-never-order
+
+# Write your MySQL query statement below
+SELECT Name AS Customers
+FROM  Customers
+WHERE NOT EXISTS (SELECT CustomerId FROM Orders WHERE Customers.Id=Orders.CustomerId);

@@ -1,0 +1,4 @@
+// https://leetcode.com/problems/delete-duplicate-emails
+
+# Write your MySQL query statement below
+DELETE E1 FROM Person E1,Person E2 Where E1.Email=E2.Email AND E1.Id>E2.Id

@@ -1,0 +1,5 @@
+// https://leetcode.com/problems/duplicate-emails
+
+# Write your MySQL query statement below
+select distinct Original.Email from Person as Original, Person as Compare 
+where Original.Email=Compare.Email AND NOT Original.Id=Compare.Id
